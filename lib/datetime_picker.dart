@@ -30,10 +30,15 @@ class _DateTimePickerState extends State<DateTimePicker> {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              RaisedButton(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5.0)),
-                elevation: 4.0,
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: new RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5.0)),
+                  elevation: 4.0,
+                  primary: Colors.white,
+                  
+                ),
+                
                 onPressed: () {
                   DatePicker.showDatePicker(context,
                       theme: DatePickerTheme(
@@ -88,15 +93,19 @@ class _DateTimePickerState extends State<DateTimePicker> {
                     ],
                   ),
                 ),
-                color: Colors.white,
+                
               ),
               SizedBox(
                 height: 20.0,
               ),
-              RaisedButton(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5.0)),
-                elevation: 4.0,
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: new RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5.0)),
+                  elevation: 4.0,
+                  primary: Colors.white,
+                  
+                ),
                 onPressed: () {
                   DatePicker.showTimePicker(context,
                       theme: DatePickerTheme(
@@ -151,7 +160,7 @@ class _DateTimePickerState extends State<DateTimePicker> {
                     ],
                   ),
                 ),
-                color: Colors.white,
+                
               )
             ],
           ),
